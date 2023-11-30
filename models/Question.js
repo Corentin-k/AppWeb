@@ -1,5 +1,5 @@
 ﻿const { DataTypes } = require('sequelize');
-const sequelize = require('../db'); // Importez votre configuration Sequelize depuis db.js
+const sequelize = require('../db');
 
 const Question = sequelize.define('Question', {
   // Définir les colonnes de la table Questions

@@ -50,3 +50,30 @@ Ce fichier contient la définition du modèle Sequelize pour représenter la str
 ### Fichier routes/question.js
 
 Ce fichier contient les définitions des routes Express pour gérer les opérations CRUD (Create, Read, Update, Delete) concernant les questions dans l'API. Il définit comment l'application web répondra aux requêtes HTTP concernant les questions. Par exemple, la création d'une nouvelle question, la récupération de toutes les questions, la récupération d'une question spécifique par son ID, la mise à jour d'une question existante, etc. Les routes utilisent les modèles Sequelize définis dans le fichier models/questions.js pour interagir avec la base de données.
+
+
+# Nodemon
+
+## Qu'est-ce que Nodemon ?
+
+Nodemon est un outil pratique pour les développeurs Node.js. C'est un utilitaire qui facilite le processus de développement en surveillant les modifications apportées aux fichiers de votre application. Chaque fois que vous enregistrez un fichier, Nodemon redémarre automatiquement votre serveur Node.js, ce qui évite d'avoir à redémarrer manuellement le serveur après chaque modification.
+
+## Son utilité
+
+- **Rechargement automatique :** Avec Nodemon, vous n'avez pas besoin de redémarrer votre serveur manuellement à chaque fois que vous modifiez du code. Il surveille les fichiers de votre application et redémarre automatiquement le serveur dès qu'il détecte des changements.
+  
+- **Productivité accrue :** En évitant le processus fastidieux de redémarrage du serveur, Nodemon vous permet de vous concentrer sur le développement sans interruption, améliorant ainsi votre productivité.
+
+- **Configuration facile :** Son utilisation est simple et ne nécessite généralement qu'une seule commande pour exécuter votre application avec `nodemon`.
+
+## Comment l'utiliser
+
+1. **Installation :** Vous pouvez installer `nodemon` localement dans votre projet en utilisant `npm install nodemon --save-dev`.
+  
+2. **Utilisation :** Lancez votre application Node.js avec Nodemon en utilisant `npx nodemon votre_fichier.js`.
+
+3. **Surveillance des modifications :** Nodemon surveille les fichiers de votre application. Chaque fois que vous modifiez et enregistrez un fichier, il redémarre automatiquement le serveur pour prendre en compte ces changements.
+
+## Conclusion
+
+Nodemon est un outil pratique pour le développement Node.js, réduisant le temps passé à redémarrer le serveur et facilitant le processus de développement en offrant un rechargement automatique à chaque modification de fichier.
