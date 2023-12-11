@@ -7,7 +7,7 @@ const Role = require('../models/Role');
 // Exemple de route pour récupérer tous les utilisateurs
 router.get('/', async (req, res) => {
     try {
-      const roles = await Role.findAll();
+      const roles = await Roleco.findAll();
       res.json(roles);
     } catch (error) {
       res.status(500).json({ message: error.message });

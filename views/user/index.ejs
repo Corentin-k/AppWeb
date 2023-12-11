@@ -1,0 +1,36 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Accueil</title>
+    <!-- Ajoute tes liens CSS, scripts, etc. ici -->
+</head>
+
+<body>
+    <header>
+        <!-- En-tête de la page -->
+        <h1>Bienvenue sur la page d'accueil</h1>
+    </header>
+
+    <main>
+        <!-- Contenu principal de la page -->
+        <p>Voici une page d'accueil simple utilisant EJS.</p>
+        <% if (users && users.length > 0) { %>
+            <ul>
+                <% users.forEach(user => { %>
+                    <li><%= user.name %> - <%= user.email %></li>
+                <% }); %>
+            </ul>
+        <% } else { %>
+            <p>Aucun utilisateur trouvé.</p>
+        <% } %>
+    </main>
+
+    <footer>
+        <!-- Pied de page -->
+        <p>&copy; 2023 Mon Application</p>
+    </footer>
+</body>
+
+</html>

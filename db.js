@@ -19,5 +19,5 @@ async function testConnection() {
 // Exécutez la fonction pour tester la connexion
 testConnection();
 
-// Exportez l'instance Sequelize pour l'utiliser dans d'autres parties de votre application
+// Exportez l'instance S(equelize pour l'utiliser dans d'autres parties de votre application
 module.exports = sequelize;
